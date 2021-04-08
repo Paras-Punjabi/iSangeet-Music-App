@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="Songs/Images/favicon.png" />
+    <title>Music-app</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+  <div title="PlayList" class="list"></div>
+    <h1>iSangeet-App</h1>
+    <div class="song-card">
+      <div class="image"></div>
+      <div class="song-name"></div>
+      <div class="slider">
+        <span class="startTime">00:00</span>
+        <input type="range" class="range" disabled name="vol" min="0" value="0" /><span
+          class="endTime"
+          >00:00</span
+        >
+      </div>
+      <div class="tools">
+        <i id="backward" class="fas fa-step-backward"></i>
+        <i id="play" class="fas fa-play"></i>
+        <i id="pause" class="fas fa-pause hide"></i>
+        <i id="forward" class="fas fa-step-forward"></i>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

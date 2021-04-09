@@ -9,7 +9,7 @@ let endTime = document.querySelector(".endTime");
 let range = document.querySelector(".range");
 let imageMusic = document.querySelector(".image");
 
-// objets of songs
+// objects of songs
 let songs = [
   {
     songName: "Bad-Guy",
@@ -89,11 +89,11 @@ play.addEventListener(
       updateTimeline(audio);
       let minutes = Math.floor(audio.currentTime / 60);
       let seconds = Math.floor(audio.currentTime - minutes * 60);
-      if(seconds<10){
-        seconds = `0${seconds}`
+      if (seconds < 10) {
+        seconds = `0${seconds}`;
       }
-      if(minutes<10){
-        minutes = `0${minutes}`
+      if (minutes < 10) {
+        minutes = `0${minutes}`;
       }
       startTime.innerHTML = `${minutes}:${seconds}`;
     });
@@ -111,8 +111,6 @@ pause.addEventListener("click", () => {
   let seconds = Math.floor(audio.currentTime - minutes * 60);
   startTime.innerHTML = `${minutes}:${seconds}`;
 });
-
-
 
 // Play Next
 forward.addEventListener(
@@ -147,7 +145,6 @@ backward.addEventListener("click", () => {
   audio.play();
 });
 
-
 // Timeline function
 function updateTimeline(song) {
   let duration = song.duration;
@@ -159,22 +156,20 @@ function updateTimeline(song) {
   range.value = song.currentTime;
 }
 
-
 // playList Code
 let list = document.querySelector(".list");
 
 list.addEventListener("click", () => {
-
   // playlist body
   let listMusic = document.createElement("div");
   listMusic.classList.add("listMusic");
   document.body.appendChild(listMusic);
 
-  // totla tracks
-  let span = document.createElement('span')
+  // total tracks
+  let span = document.createElement("span");
   span.innerHTML = `${songs.length} tracks`;
-  span.classList.add('track')
-  listMusic.appendChild(span)
+  span.classList.add("track");
+  listMusic.appendChild(span);
 
   // icon of cross
   let icon = document.createElement("div");
@@ -201,7 +196,6 @@ list.addEventListener("click", () => {
       audio = new Audio(songs[index].audio);
       imageMusic.style.background = `url(${item.image})`;
       PlaySong();
-
     });
   });
 
@@ -209,7 +203,10 @@ list.addEventListener("click", () => {
   listMusic.firstElementChild.nextElementSibling.style.marginTop = "40px";
 });
 
-
 // autoplay the next song when the current song gets over
-audio.addEventListener('ended',playNext)
+audio.addEventListener("ended", playNext);
 
+// to drag the range and play the song from that particular position
+range.addEventListener("input", () => {
+  audio.currentTime = range.value;
+});

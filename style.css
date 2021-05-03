@@ -51,13 +51,13 @@ body {
 .tools {
   display: flex;
   position: relative;
-  top: 6rem;
+  top: 8rem;
   justify-content: center;
   cursor: pointer;
 }
 i {
   font-size: 50px;
-  margin: 35px;
+  margin: 10px 36px;
 }
 .hide {
   display: none;
@@ -138,7 +138,7 @@ h1{
 .fa-times{
   font-size: 20px;
   position: absolute;
-  top: -25px;
+  top: -2px;
   right: -25px;
   height: 20px;
   width: 20px;
@@ -243,7 +243,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
  /* small changes for phones */
 @media screen and (max-width:835px){
-  .list{
+  .list,.listMusic{
       display: none;
   }
   .song-name::before{

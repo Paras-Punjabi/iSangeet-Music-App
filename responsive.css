@@ -10,6 +10,7 @@
     }
     i:not(#volume){
         font-size: 45px !important;
+        margin: 10px 26px !important;
     }
     .slider{
         width: 90% !important;

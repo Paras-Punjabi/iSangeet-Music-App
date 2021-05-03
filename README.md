@@ -4,3 +4,4 @@ About the Music-App(iSangeet):-
 3. With each song there is a unique image corresponding to it. 
 4. It also contains dragable timeline so that we can jump to that section of song which we wanted to listen
 5. Added volume equalizer.
+Live at : https://paras-punjabi.github.io/iSangeet-Music-App/ 

@@ -68,7 +68,7 @@ i {
   position: relative;
   top: 111px;
   justify-content: space-between;
-  width: 70%;
+  width: 90%;
 }
 .range {
   width: 70%;
@@ -80,7 +80,7 @@ i {
 .fa-play,
 .fa-pause {
   position: relative;
-  left: 2px;
+  left: 6px;
 }
 
 .song-name {
@@ -241,3 +241,20 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 .endTime{
   margin-left: 10px;
 }
+ /* small changes for phones */
+@media screen and (max-width:835px){
+  .list{
+      display: none;
+  }
+  .song-name::before{
+    content: "("attr(num)" tracks)" ;
+    position: absolute;
+    font-size: 20px;
+    top: 50px;
+    text-align: center;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+

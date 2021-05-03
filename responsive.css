@@ -1,0 +1,20 @@
+@media screen and (max-width:575px){
+    .song-card{
+        width: 310px !important;
+    }
+    .image{
+        width: 265px !important;
+    }
+    #volume{
+        right: 1.5rem !important;
+    }
+    i:not(#volume){
+        font-size: 45px !important;
+    }
+    .slider{
+        width: 90% !important;
+    }
+    .song-name{
+        font-size: 34px !important;
+    }
+}

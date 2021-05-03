@@ -86,11 +86,22 @@ let songs = [
     image:
       "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
   },
+  {
+    songName: "Cheap Thrills",
+    audio: "Songs/cheapthrills.mp3",
+    image:
+      "https://images.unsplash.com/photo-1598519502953-96e1fb8d4a09?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDl8fHJvY2slMjBtdXNpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
+  {
+    songName: "Deep End",
+    audio: "Songs/deepend.mp3",
+    image:
+      "https://images.unsplash.com/photo-1487180144351-b8472da7d491?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHJvY2slMjBtdXNpY3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+  },
 ];
 
 let counter = 0;
 let audio = new Audio(songs[counter].audio);
-
 songName.innerHTML = "Music is Life Itself";
 
 // Play song

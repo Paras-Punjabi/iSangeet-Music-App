@@ -11,6 +11,7 @@ let imageMusic = document.querySelector(".image");
 let volume = document.getElementById("volume");
 let volumeDiv = document.querySelector(".volumeDiv");
 let volumeRange = document.getElementById("volumeRange");
+let download = document.getElementById('download');
 
 // objects of songs
 let songs = [
@@ -263,3 +264,8 @@ volumeRange.addEventListener("input", () => {
     volumeRange.value * 100
   )}%`;
 });
+
+download.addEventListener('click',()=>{
+  PauseSong();
+  window.open(audio.src)
+})

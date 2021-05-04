@@ -51,7 +51,7 @@ body {
 .tools {
   display: flex;
   position: relative;
-  top: 8rem;
+  top: 4.5rem;
   justify-content: center;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -68,7 +68,7 @@ i {
 .slider {
   display: flex;
   position: relative;
-  top: 111px;
+  top: 61px;
   justify-content: space-between;
   width: 90%;
 }
@@ -82,12 +82,12 @@ i {
 .fa-play,
 .fa-pause {
   position: relative;
-  left: 6px;
+  left: 4px;
 }
 
 .song-name {
   position: relative;
-  top: 4rem;
+  top: 2.7rem;
   font-size: 39px;
   transition: all 0.2s ease;
 }
@@ -163,7 +163,7 @@ h1{
   letter-spacing: 0.2px;
 }
 #volume{
-  font-size:  20px;
+  font-size:20px;
   margin: -8px;
   cursor: pointer;
   position: absolute;
@@ -202,6 +202,13 @@ input[type=range]::-webkit-slider-runnable-track {
   background: #ddd;
   border: none;
   border-radius: 3px;
+}
+
+#download{
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  cursor: pointer;
 }
 
 input[type=range]::-webkit-slider-thumb {
@@ -252,12 +259,23 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   .song-name::before{
     content: "("attr(num)" tracks)" ;
     position: absolute;
-    font-size: 20px;
-    top: 50px;
+    font-size: 15px;
+    top: 45px;
     text-align: center;
     width: 100%;
     left: 50%;
     transform: translateX(-50%);
   }
+  .song-name{
+    font-size: 35px;
+  }
+  .slider{
+    top: 81px;
+  }
+  .tools{
+    top: 5.5rem;
+  }
 }
+
+
 

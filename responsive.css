@@ -8,7 +8,7 @@
     #volume{
         right: 1.5rem !important;
     }
-    i:not(#volume){
+    i:not(#volume,#download){
         font-size: 45px !important;
         margin: 10px 26px !important;
     }
@@ -16,6 +16,9 @@
         width: 90% !important;
     }
     .song-name{
-        font-size: 34px !important;
+        font-size: 33px !important;
     }
+   #download{
+       font-size: 25px !important;
+   }
 }
